@@ -21,7 +21,7 @@ it.describe('DEMOQA', () => {
         expect(textContent).toBe('This is a sample page')
     })
 
-    it.only('New Window Message', async ({page}) => {
+    it('New Window Message', async ({page}) => {
         const newTabHW = new NewTabHW(page)
         await newTabHW.navigate();
 
